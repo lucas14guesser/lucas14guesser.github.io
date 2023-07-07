@@ -33,7 +33,7 @@ body {
 
 .cabecalho__menu__link {
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
@@ -44,17 +44,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .apresentacao__conteudo {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fonte-primaria);
 }
 
@@ -63,12 +64,12 @@ body {
 }
 
 .apresentacao__conteudo__paragrafo {
-    font-size: 24px;   
+    font-size: 1.5rem;   
     font-family: var(--fonte-secundaria); 
 }
 
 .apresentacao__conteudo__tabela {
-    font-size: 24px;   
+    font-size: 1.5rem;   
     font-family: var(--fonte-secundaria); 
 }
 
@@ -82,16 +83,16 @@ body {
 .apresentacao__links__subtitulo {
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .apresentacao__links__link {
     display: flex;
-    width: 378px;
+    width: 50%;
     justify-content: center;
     gap: 16px;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none;
@@ -101,7 +102,7 @@ body {
 }
 
 .apresentacao__imagem {
-    width: 650px;
+    width: 50%;
 }
 
 .rodape {
@@ -110,7 +111,7 @@ body {
     background-color: var(--cor-terciaria);
     text-align: center;
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
@@ -120,4 +121,168 @@ body {
 
 .apresentacao__links__link:hover {
     background-color: var(--cor-hover);
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+}
+
+@media (max-width: 540px) {
+    .cabecalho__menu__link {
+        font-size: 1.2rem;
+    }
+
+    .apresentacao {
+        padding: 5% 5% 10% 5%;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 1.45rem;
+    }
+
+    .apresentacao__conteudo__paragrafo {
+        font-size: 1.1rem;
+    }
+
+    .apresentacao__conteudo__tabela {
+        font-size: 1.1rem;
+    }
+
+    .apresentacao__imagem {
+        width: 90%;
+    }
+
+    .apresentacao__links__subtitulo {
+        font-size: 1.1rem;
+    }
+
+    .apresentacao__links__link {
+        width: 50%;
+        font-size: 1.1rem;
+        padding: 4% 0;
+        align-items: center;
+    }
+
+    .rodape {
+        padding: 5%;
+        font-size: 1.1rem;
+    }
+
+@media (max-width: 414px) {
+    .cabecalho {
+        padding: 10% 0 10% 0;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .cabecalho__menu__link {
+        font-size: 1rem;
+    }
+
+    .apresentacao {
+        padding: 5% 5% 10% 5%;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 1.25rem;
+    }
+
+    .apresentacao__conteudo__paragrafo {
+        font-size: .9rem;
+    }
+
+    .apresentacao__conteudo__tabela {
+        font-size: .9rem;
+    }
+
+    .apresentacao__links__subtitulo {
+        font-size: .9rem;
+    }
+
+    .apresentacao__links__link {
+        width: 50%;
+        font-size: 1rem;
+        padding: 5% 0;
+        align-items: center;
+    }
+
+    .apresentacao__imagem {
+        width: 70%;
+    }
+
+    .rodape {
+        padding: 5%;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 280px) {
+    .cabecalho {
+        padding: 7% ;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .cabecalho__menu__link {
+        font-size: .7rem;
+    }
+
+    .apresentacao {
+        padding: 3% 3% 7% 3%;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 1rem;
+    }
+
+    .apresentacao__conteudo__paragrafo {
+        font-size: .8rem;
+    }
+
+    .apresentacao__conteudo__tabela {
+        font-size: .8rem;
+    }
+
+    .apresentacao__links__subtitulo {
+        font-size: .8rem;
+    }
+
+    .apresentacao__links__link {
+        width: 50%;
+        font-size: .8rem;
+        padding: 3% 0;
+        align-items: center;
+    }
+
+    .apresentacao__imagem {
+        width: 80%;
+    }
+
+    .rodape {
+        padding: 5%;
+        font-size: .8rem;
+    }
+}
 }
