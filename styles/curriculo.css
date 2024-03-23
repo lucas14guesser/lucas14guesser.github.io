@@ -1,0 +1,211 @@
+@import './index.css';
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background: var(--bg-color);
+    font-family: var(--font-txt);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 4rem;
+}
+
+.funcao {
+    font-size: 1rem;
+    color: var(--font-color-default);
+}
+
+.nome {
+    font-size: 1.5rem;
+    color: var(--font-color);
+    font-weight: bold;
+}
+
+.nome_link {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--font-color-default);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 5rem 30rem;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho_texto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.titulo {
+    font-size: 38px;
+    color: var(--font-color);
+    font-weight: bold;
+}
+
+.subtitulo {
+    font-size: 24px;
+    color: var(--font-color);
+    font-weight: bold;
+    margin: 1rem 0 .3rem 0;
+}
+
+.cabecalho_foto {
+    width: 160px;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.lista_lista {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 18px;
+    gap: .3rem;
+}
+
+hr {
+    margin-bottom: 1px solid #979A9A;
+}
+
+.lista_item {
+    display: flex;
+    flex-direction: row;
+    color: var(--font-color);
+    font-weight: bold;
+    align-items: center;
+    gap: .3rem;
+}
+
+.lista_item_icone {
+    width: 18px;
+}
+
+.lista_item_link {
+    text-decoration: none;
+    color: var(--font-color-default);
+}
+
+.italic-normal {
+    color: var(--font-color-default);
+    font-weight: normal;
+    font-style: italic;
+}
+
+.secao-texto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.antetitulo {
+    color: var(--font-color-default);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: .3rem;
+}
+
+.antetitulo-footer {
+    color: var(--font-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.lista_item_link:hover {
+    color: var(--font-color);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.link:hover {
+    color: var(--font-color);
+    font-weight: bold;
+    transition: 0.5s;
+}

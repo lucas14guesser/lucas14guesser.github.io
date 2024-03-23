@@ -1,0 +1,202 @@
+:root{
+    --font-color: #073763;
+    --font-color-default: #626567;
+    --bg-color: #f0f3f4;
+    --bg-color-hover: #BDC3C7;
+    --white: #FFFFFF;
+    --black: #000000;
+    --font-txt: "Bricolage Grotesque", sans-serif;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background: var(--bg-color);
+    font-family: var(--font-txt);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 4rem;
+}
+
+.nome {
+    font-size: 1.5rem;
+    color: var(--font-color);
+    font-weight: bold;
+}
+
+.funcao {
+    font-size: 1rem;
+    color: var(--font-color-default);
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+.nome_link {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.link {
+    text-decoration: none;
+    color: var(--font-color-default);
+}
+
+.linha-vertical {
+    height: 1rem;
+    border-right: 1px solid;
+    border-color: var(--font-color);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 15rem 0 0 0;
+}
+
+.imagem {
+    width: 430px;
+    border-radius: 100rem;
+}
+
+.sobre {
+    width: 33%;
+}
+
+.titulo {
+    font-size: 5rem;
+    color: var(--font-color);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.subtitulo {
+    font-size: 1.5rem;
+    color: var(--font-color);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.texto {
+    font-size: 1rem;
+    color: var(--font-color-default);
+    margin-bottom: 2rem;
+}
+
+.links-circle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.link-circle {
+    max-width: 90px;
+    min-width: 90px;
+    color: var(--white);
+    background-color: var(--font-color);
+    border: 1px solid;
+    border-color: var(--font-color);
+    border-radius: 50%;
+    font-size: 1.3rem;
+    text-align: center;
+    text-decoration: none;
+    padding: 4rem 2rem;
+}
+
+.separacao {
+    margin: 15rem 4rem 0 4rem;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem;
+}
+
+.antetitulo {
+    color: var(--font-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.mt-05 {
+    margin-top: .5rem;
+}
+
+.icone {
+    width: 1.3rem;
+}
+
+.follow {
+    text-align: center;
+}
+
+.link:hover {
+    color: var(--font-color);
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.link-circle:hover {
+    background-color: var(--bg-color-hover);
+    color: var(--font-color);
+    font-weight: bold;
+    transition: 0.5s;
+}
