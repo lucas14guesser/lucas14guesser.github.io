@@ -138,7 +138,7 @@ table {
 }
 
 hr {
-    margin-bottom: 1px solid #979A9A;
+    margin-bottom: 1px solid var(--font-color-default);
 }
 
 .lista_item {
@@ -208,4 +208,120 @@ hr {
     color: var(--font-color);
     font-weight: bold;
     transition: 0.5s;
+}
+
+@media (max-width: 1200px) {
+    .nav {
+        margin: 2rem 2rem;
+    }
+
+    .container {
+        margin: 5rem 15rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav {
+        flex-direction: column;
+        margin: 1rem 1rem;
+    }
+
+    .container {
+        margin: 5rem 8rem;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        margin: 1rem;
+    }
+
+    .container {
+        margin: 5rem 4rem;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cabecalho_foto {
+        width: 120px;
+    }
+
+    .titulo {
+        font-size: 32px;
+    }
+
+    .subtitulo {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .nome {
+        font-size: 1.2rem;
+    }
+
+    .funcao, .links, .link {
+        font-size: 0.8rem;
+    }
+
+    .container {
+        margin: 5rem 2rem;
+    }
+
+    .titulo {
+        font-size: 28px;
+    }
+
+    .subtitulo {
+        font-size: 18px;
+    }
+
+    .cabecalho_foto {
+        width: 100px;
+    }
+
+    .lista_lista {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container {
+        margin: 5rem 1rem;
+        align-items: flex-start;
+    }
+
+    .titulo {
+        font-size: 24px;
+    }
+
+    .subtitulo {
+        font-size: 16px;
+    }
+
+    .cabecalho_foto {
+        width: 80px;
+    }
+
+    .links {
+        align-items: flex-start;
+    }
+
+    .lista_item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

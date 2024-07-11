@@ -83,11 +83,41 @@ table {
     color: var(--font-color-default);
 }
 
+.container-contato {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 15rem 0 0 8rem;
+}
+
+
+.subtitulo-contato {
+    font-size: 2rem;
+    color: var(--font-color);
+}
+
 .formulario {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin: 5rem 30rem;
+    align-items: start;
+    margin: 0 15rem;
+}
+
+.form-ident {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.msg-btn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    align-items: center;
 }
 
 .label-form {
@@ -106,7 +136,7 @@ table {
 }
 
 .area-form {
-    height: 10rem;
+    height: 7rem;
     border: 1px solid;
     border-radius: 1rem;
     border-color: var(--font-color-default);
@@ -122,19 +152,20 @@ table {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    gap: 1rem;
+    margin-left: 1rem;
 }
 
 .botao {
-    max-width: 150px;
-    min-width: 150px;
+    width: 8rem;
     color: var(--white);
     background-color: var(--font-color);
-    border-radius: 50%;
+    border-radius: 4rem;
     border: 1px solid;
     font-size: 1.3rem;
     text-align: center;
     text-decoration: none;
-    padding: 4rem 2rem;
+    padding: 1rem .5rem;
 }
 
 .botao:hover {
@@ -148,4 +179,115 @@ table {
     color: var(--font-color);
     font-weight: bold;
     transition: 0.5s;
+}
+
+@media (max-width: 1200px) {
+    .nav {
+        margin: 2rem 2rem;
+    }
+
+    .formulario {
+        margin: 0 10rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav {
+        flex-direction: column;
+        margin: 1rem 1rem;
+    }
+
+    .container-contato {
+        flex-direction: column;
+        margin: 10rem 0 0 4rem;
+    }
+
+    .formulario {
+        margin: 0 5rem;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        margin: 1rem;
+    }
+
+    .container-contato {
+        margin: 5rem 0 0 2rem;
+    }
+
+    .formulario {
+        margin: 0 2rem;
+    }
+
+    .form-ident, .msg-btn {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .nome {
+        font-size: 1.2rem;
+    }
+
+    .funcao, .links, .link {
+        font-size: 0.8rem;
+    }
+
+    .container-contato {
+        margin: 5rem 0 0 1rem;
+    }
+
+    .subtitulo-contato {
+        font-size: 1.5rem;
+    }
+
+    .formulario {
+        margin: 0 1rem;
+    }
+
+    .label-form, .input-form, .area-form {
+        font-size: 1.2rem;
+    }
+
+    .botao {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container-contato {
+        margin: 5rem 0 0 0.5rem;
+    }
+
+    .subtitulo-contato {
+        font-size: 1.2rem;
+    }
+
+    .formulario {
+        margin: 0 0.5rem;
+    }
+
+    .label-form, .input-form, .area-form {
+        font-size: 1rem;
+    }
+
+    .links {
+        align-items: flex-start;
+    }
+
+    .botao {
+        width: 100%;
+    }
 }

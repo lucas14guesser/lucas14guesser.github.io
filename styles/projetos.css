@@ -1,0 +1,322 @@
+@import './index.css';
+
+* {
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 4rem;
+}
+
+.funcao {
+    font-size: 1rem;
+    color: var(--font-color-default);
+}
+
+.nome {
+    font-size: 1.5rem;
+    color: var(--font-color);
+    font-weight: bold;
+}
+
+.nome_link {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--font-color-default);
+}
+
+.container-projetos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 10rem 8rem 0 8rem;
+    gap: 2rem;
+}
+
+.container-subtitulo-projetos {
+    margin: 12rem 0 0 8rem;
+}
+
+.subtitulo-projetos {
+    font-size: 2rem;
+    color: var(--font-color);
+}
+
+.titulo-projeto {
+    font-size: 1.3rem;
+    color: var(--font-color);
+}
+
+.texto-projeto {
+    font-size: 1rem;
+    color: var(--font-color-default);
+    text-align: justify;
+}
+
+.carrossel {
+    min-width: 45rem;
+    max-width: 45rem;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.container-imgs {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.carrosel-imagem {
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    left: 0;
+    flex-shrink: 0;
+    object-fit: cover;
+    scroll-behavior: smooth;
+}
+
+.btn-anterior, .btn-proximo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--font-color-default);
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+
+.btn-anterior {
+    left: 10px;
+}
+
+.btn-proximo {
+    right: 10px;
+}
+
+
+hr {
+    margin-bottom: 1px solid var(--font-color-default);
+}
+
+.lista_item {
+    display: flex;
+    flex-direction: row;
+    color: var(--font-color);
+    font-weight: bold;
+    align-items: center;
+    gap: .3rem;
+}
+
+.lista_item_icone {
+    width: 18px;
+}
+
+.lista_item_link {
+    text-decoration: none;
+    color: var(--font-color-default);
+}
+
+.italic-normal {
+    color: var(--font-color-default);
+    font-weight: normal;
+    font-style: italic;
+}
+
+.secao-texto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.antetitulo {
+    color: var(--font-color-default);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: .3rem;
+}
+
+.antetitulo-footer {
+    color: var(--font-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.container-texto-github {
+    margin: 10rem 8rem 0 8rem;
+}
+
+.texto-github {
+    font-size: 1.3rem;
+    color: var(--font-color);
+}
+
+.link-texto-github {
+    color: var(--font-color);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.lista_item_link:hover {
+    color: var(--font-color);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.link:hover {
+    color: var(--font-color);
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.link-texto-github:hover {
+    color: var(--font-color-default);
+    transition: 0.5s;
+}
+
+@media (max-width: 1200px) {
+    .nav {
+        margin: 2rem 2rem;
+    }
+
+    .container-projetos, .container-texto-github {
+        margin: 10rem 4rem 0 4rem;
+    }
+
+    .container-subtitulo-projetos {
+        margin: 12rem 0 0 4rem;
+    }
+
+    .carrossel {
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav {
+        flex-direction: column;
+        margin: 1rem 1rem;
+    }
+
+    .container-projetos, .container-texto-github {
+        flex-direction: column;
+        margin: 5rem 2rem 0 2rem;
+    }
+
+    .container-subtitulo-projetos {
+        margin: 8rem 0 0 2rem;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        margin: 1rem;
+    }
+
+    .container-projetos, .container-texto-github {
+        margin: 5rem 1rem 0 1rem;
+    }
+
+    .container-subtitulo-projetos {
+        margin: 5rem 0 0 1rem;
+    }
+
+    .carrossel {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .btn-anterior, .btn-proximo {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .nome {
+        font-size: 1.2rem;
+    }
+
+    .funcao, .links, .link {
+        font-size: 0.8rem;
+    }
+
+    .container-projetos, .container-texto-github {
+        margin: 5rem 0.5rem 0 0.5rem;
+    }
+
+    .container-subtitulo-projetos {
+        margin: 5rem 0 0 0.5rem;
+    }
+
+    .subtitulo-projetos {
+        font-size: 1.5rem;
+    }
+
+    .titulo-projeto, .texto-github {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container-projetos, .container-texto-github {
+        margin: 5rem 0.5rem 0 0.5rem;
+        flex-direction: column;
+    }
+
+    .container-subtitulo-projetos {
+        margin: 5rem 0 0 0.5rem;
+    }
+
+    .carrossel {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .btn-anterior, .btn-proximo {
+        font-size: 1rem;
+    }
+}

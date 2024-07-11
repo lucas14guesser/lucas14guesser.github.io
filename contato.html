@@ -16,27 +16,48 @@
         <div class="links">
             <a href="./curriculo.html" class="link">Currículo</a>
             <p class="linha-vertical"></p>
-            <a href="https://github.com/lucas14guesser" target="_blank" class="link">Projetos</a>
+            <a href="./projetos.html" class="link">Projetos</a>
             <p class="linha-vertical"></p>
             <a href="./contato.html" class="link">Contato</a>
         </div>
     </div>
-    <form action="mailto:lucas14guesser@gmail.com" method="post" enctype="text/plain" class="formulario">
-        <label class="label-form">Nome</label><br>
-        <input type="text" name="nome" id="nome" class="input-form" required><br>
-        <label class="label-form">Sobrenome</label><br>
-        <input type="text" name="sobrenome" id="sobrenome" class="input-form" required><br>
-        <label class="label-form">Email</label><br>
-        <input type="text" name="email" id="email" class="input-form" required><br>
-        <label class="label-form">Assunto</label><br>
-        <input type="text" name="assunto" id="assunto" class="input-form" required><br>
-        <label class="label-form">Mensagem</label><br>
-        <textarea name="mensagem" id="mensagem" rows="5" class="area-form" required></textarea><br>
-        <div class="botoes">
-            <input type="submit" value="Enviar" id="enviar" class="botao">
-            <input type="reset" value="Limpar" id="limpar" class="botao">
+    <div class="container-contato">
+        <div class="texto-contato">
+            <h2 class="subtitulo-contato">Gostaria de entrar em contato comigo? Preencha o formulário ao lado!</h2>
         </div>
-    </form>
+        <form action="mailto:lucas14guesser@gmail.com" method="post" enctype="text/plain" class="formulario">
+            <div class="form-ident">
+                <div>
+                    <label class="label-form">Nome</label><br>
+                    <input type="text" name="nome" id="nome" class="input-form" required><br>
+                </div>
+                <div>
+                    <label class="label-form">Sobrenome</label><br>
+                    <input type="text" name="sobrenome" id="sobrenome" class="input-form" required><br>
+                </div>
+            </div>
+            <div class="form-ident">
+                <div>
+                    <label class="label-form">Email</label><br>
+                    <input type="text" name="email" id="email" class="input-form" required><br>
+                </div>
+                <div>
+                    <label class="label-form">Assunto</label><br>
+                    <input type="text" name="assunto" id="assunto" class="input-form" required><br>
+                </div>
+            </div>
+            <div class="msg-btn">
+                <div>
+                    <label class="label-form">Mensagem</label><br>
+                    <textarea name="mensagem" id="mensagem" rows="5" class="area-form" required></textarea><br>
+                </div>
+                <div class="botoes">
+                    <input type="submit" value="Enviar" id="enviar" class="botao">
+                    <input type="reset" value="Limpar" id="limpar" class="botao">
+                </div>
+            </div>
+        </form>
+    </div>
     <hr class="separacao">
     <footer class="rodape">
         <div>
